@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_homePage">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/repeating_pattern"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TextConect"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/metal_mania"
+            android:gravity="center"
+            android:text="Conecte-se"
+            android:textColor="@color/purple"
+            android:textSize="24dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logoTop"
+        android:layout_width="420dp"
+        android:layout_height="125dp"
+        android:background="@drawable/degrade_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <!-- Lado Esquerdo - Logo com margem -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical"> <!-- Adiciona margem à esquerda -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/logobranco" />
+        </LinearLayout>
+
+        <!-- Lado Direito - Texto -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/metal_mania"
+                android:gravity="center_vertical"
+                android:text="Guitar\n     World"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/repeating_pattern"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoTop"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Início"
+            android:textColor="#000000"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:fontFamily="@font/metal_mania"
+            android:layout_marginEnd="4dp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="1dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/darkGray"
+           />
+
+        <!-- Botão 2 -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Catálogo"
+            android:textColor="#000000"
+            android:paddingStart="22dp"
+            android:paddingEnd="24dp"
+            android:fontFamily="@font/metal_mania"
+            android:layout_marginEnd="4dp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="1dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/darkGray"
+            />
+
+        <!-- Botão 3 -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cadastro"
+            android:textColor="#000000"
+            android:paddingStart="22dp"
+            android:paddingEnd="24dp"
+            android:fontFamily="@font/metal_mania"
+            android:layout_marginEnd="4dp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="1dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/darkGray"
+            />
+
+        <!-- Botão 4 -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Entrar"
+            android:textColor="#000000"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:fontFamily="@font/metal_mania"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="1dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/darkGray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="409dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="241dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
